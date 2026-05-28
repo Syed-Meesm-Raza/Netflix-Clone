@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Martel+Sans&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Google Sans", sans-serif;
+
+}
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+.main{
+    background-image: url(assets/images/bg1.jpg);
+    height: 100vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.main .box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.64);
+    z-index: 1;
+}
+nav{
+    max-width: 80vw;
+    margin: auto;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+}
+nav .img{
+    color: red;
+    position: relative;
+    z-index: 10;
+}
+nav button{
+    position: relative; 
+    z-index: 10;
+}
+nav div{
+    display: flex;
+    gap: 10px;
+}
+nav div select:first-child{
+    background: transparent;
+    color: rgba(255,255,255,0.8);
+    border: 1px solid rgba(255,255,255,0.4);
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+nav div button:last-child{
+    background: red;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.hero{
+    font-family: "Google Sans", sans-serif;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    flex-direction: column;
+    opacity: 1;
+    margin-top: 50px;
+    
+}
+.hero h1{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.hero p{
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.hero-form{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.hero-form input{
+    padding: 16px;
+    width: 450px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    font-size: 1rem;
+}
+
+.hero-form button{
+    padding: 16px 20px;
+    background: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.divider{
+    margin-bottom: 50px;
+    height: 5px;
+    background: rgb(35, 35, 35);
+}
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    gap: 30px;
+    color: white;
+}
+.text{
+    max-width: 500px;
+    font-family: "Google Sans", sans-serif;
+    
+}
+.secimg{
+    position: relative;
+    display: inline-block;
+}
+
+.secimg img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.secimg video{
+    position: absolute;
+    top: 20%;
+    left: 13%;
+    width: 73%;
+    height: 55%;
+    object-fit: cover;
+    z-index: 1;
+}
+.divider1{
+    margin-top: 70px;
+    margin-bottom: 50px;
+    height: 5px;
+    background: rgb(35, 35, 35);
+}
+.faq h1{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
+.faqbox{
+    background-color: #2d2d2d;
+    color: white;
+    margin: 10px auto;
+    max-width: 80vw;
+    transition: 0.3s ease;
+}
+
+.faqbox input[type="checkbox"] {
+  display: none;
+}
+
+.faqbox label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 30px;
+  font-size: x-large;
+  color: white;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0 30px;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.faqbox input:checked ~ .faq-answer {
+  max-height: 300px;
+  padding: 20px 30px;
+}
+
+.faqbox label .fa-plus {
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.faqbox input:checked ~ label .fa-plus {
+  transform: rotate(45deg);
+}
+.hero-form1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.hero-form1 p{
+    color: white;
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+}
+.form-group{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 70px;
+}
+
+.form-group input{
+    padding: 12px;
+    width: 500px;
+    border-radius: 3px;
+    border: solid 0.5px;
+    outline: none;
+    background: rgba(58, 58, 58, 0.301);
+    color: white;
+}
+
+.form-group button{
+    padding: 12px 20px;
+    background: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.footer{
+    color: #aaa;
+    max-width: 80vw;
+    margin: 60px auto;
+    padding: 0 20px;   
+}
+.footer p{
+    color: #aaa;
+    margin-top: 10px;
+    padding: 0 20px;
+}
+.contact{
+    color: white;
+    margin-bottom: 30px;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 80vw;
+    margin: auto;
+    padding: 0 20px; 
+}
+.footer-grid a{
+    display: block;
+    color: #aaa;
+    text-decoration: underline;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+.lang-box{
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.lang-box select{
+    background: black;
+    color: white;
+    padding: 8px 12px;
+    border: 1px solid gray;
+}
+ 
+@media (max-width: 768px){
+    .hero h1{
+        font-size: 2rem;
+    }
+
+    .hero-form{
+        align-items: center;
+    }
+    .hero-form input {
+        width: 50vw;
+    }
+
+    .hero-form button {
+        width: 35vw;
+        font-size: 0.83rem;
+    }
+
+    .first{
+        margin-top: 40px;
+        flex-direction: column;
+    }
+
+    .secimg img{
+        max-width: 90vw;
+    }
+
+    .secimg video{
+        top: 20%;
+        left: 13%;
+        width: 73%;
+        height: 55%;
+    }
+    .faqbox{
+        font-size: larger;
+    }
+    .faqbox label {
+    font-size: 1rem;
+    }
+    .form-group{
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    }
+
+    .form-group input{
+        width: 80vw;
+    }
+
+    .form-group button{
+        width: 80vw;
+    }
+    .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .footer { max-width: 95vw; 
+}
+
+}
