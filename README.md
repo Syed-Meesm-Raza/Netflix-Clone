@@ -1,4 +1,4 @@
-# Netflix Clone
+# 🎞️Netflix Clone
 
 A fully responsive Netflix landing page clone built with HTML and CSS — no frameworks or libraries used.
 
